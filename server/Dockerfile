@@ -3,7 +3,7 @@ FROM node:14.17.6
 WORKDIR /server
 
 COPY package.json ./
-COPY yarn.lock* ./
+#COPY yarn.lock* ./
 RUN yarn
 COPY . .
 
